@@ -61,10 +61,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgR-XM-yvf">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="103" width="288" height="50"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZQ-qR-9ST">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="72" width="283" height="23"/>
+                                </variation>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="29k-c7-Ty0">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="191" y="186" width="113" height="80"/>
+                                    <rect key="frame" x="191" y="146" width="113" height="80"/>
                                 </variation>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W2X-hX-8E5">
@@ -72,7 +90,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="21" y="274" width="283" height="30"/>
+                                    <rect key="frame" x="21" y="234" width="283" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mPn-J4-7hL">
@@ -80,7 +98,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="21" y="323" width="283" height="30"/>
+                                    <rect key="frame" x="21" y="269" width="283" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVJ-V6-fjT">
@@ -88,39 +106,32 @@
                                 <color key="backgroundColor" red="1" green="0.50530920435904125" blue="0.35642984321040816" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Send Mail"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="230" width="155" height="30"/>
+                                    <rect key="frame" x="16" y="190" width="155" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HFK-tZ-oDv"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgR-XM-yvf">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="88" width="288" height="90"/>
-                                </variation>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="zgR-XM-yvf"/>
+                                <exclude reference="QZQ-qR-9ST"/>
                                 <exclude reference="29k-c7-Ty0"/>
                                 <exclude reference="W2X-hX-8E5"/>
                                 <exclude reference="mPn-J4-7hL"/>
                                 <exclude reference="nVJ-V6-fjT"/>
-                                <exclude reference="zgR-XM-yvf"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="zgR-XM-yvf"/>
+                                <include reference="QZQ-qR-9ST"/>
                                 <include reference="29k-c7-Ty0"/>
                                 <include reference="W2X-hX-8E5"/>
                                 <include reference="mPn-J4-7hL"/>
                                 <include reference="nVJ-V6-fjT"/>
-                                <include reference="zgR-XM-yvf"/>
                             </mask>
                         </variation>
                     </view>
@@ -131,6 +142,7 @@
                         <outlet property="enterNameTextField" destination="W2X-hX-8E5" id="V1h-vJ-7Iu"/>
                         <outlet property="mailButton" destination="nVJ-V6-fjT" id="KyN-31-PaJ"/>
                         <outlet property="messageLabel" destination="zgR-XM-yvf" id="gPe-D8-b5a"/>
+                        <outlet property="nameLabel" destination="QZQ-qR-9ST" id="3PY-VH-I6C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
